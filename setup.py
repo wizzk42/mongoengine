@@ -45,6 +45,6 @@ setup(name='mongoengine',
       long_description=LONG_DESCRIPTION,
       platforms=['any'],
       classifiers=CLASSIFIERS,
-      install_requires=['pymongo==1.8.1'],
+      install_requires=['pymongo>=1.8.1'],
       test_suite='tests',
 )

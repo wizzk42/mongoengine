@@ -1,4 +1,4 @@
-from base import (DocumentMetaclass, TopLevelDocumentMetaclass, BaseDocument,
+from base import (DocumentMetaclass, TopLevelDocumentMetaclass, BaseDocument, 
                   ValidationError, BaseField)
 from queryset import OperationError
 from connection import _get_db

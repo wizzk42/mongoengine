@@ -5,7 +5,6 @@ import sys
 import pymongo
 import pymongo.objectid
 
-
 _document_registry = {}
 
 def get_document(name):
@@ -478,7 +477,7 @@ class BaseDocument(object):
 
         present_fields = data.keys()
         for field_name, field in cls._fields.items():
-            if field.db_field in data:
+            if field and field.db_field in data:
                 value = data[field.db_field]
                 data[field_name] = (value if value is None
                                     else field.to_python(value))
